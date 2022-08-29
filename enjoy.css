@@ -1,56 +1,3 @@
-body{
-    background-color: #B1D7B4;
-}
-
-/*styling the header */ 
-header{
-    background-color: inherit;
-    height: 15vh;
-    color: white;
-    font-size: 1.5rem;
-    font-family: 'Courier New', Courier, monospace;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-header > h1{
-    background-color: #7FB77E;
-    border: 1px solid #7FB77E; 
-    border-radius: 20px; 
-    padding: 10px 20px;
-}
-
-/* styling the nav bar */ 
-nav .navbar{
-    list-style: none;
-    height: 15vh;
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.navbar > a{
-    border: 1px solid black;
-    border-radius: 20px;
-    padding: 5px 15px;
-    text-decoration: none;
-
-
-    /*flex properties */
-    align-self: center;
-}
-
-.navbar > a:hover{
-    background-color: #FFC090;
-}
-
-a > li{
-    color: black;
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: 600;
-}
-
-
 /* ------------STYLING MAIN------------- */ 
 
 /*wrapper container and headers */ 
@@ -65,7 +12,7 @@ a > li{
 
 /*this will only apply to language contianer here */ 
 .language > article {
-    flex: 1; 
+    flex: 1;
     align-self: center;
 
 }
@@ -92,11 +39,13 @@ a > li{
 
 .box{
     display: flex;
+    flex-wrap: wrap;
     gap: 20px;
 }
 
  .box article{ 
     align-self: center;
+    flex: 1;
 }
 
 article > p{ 
@@ -130,13 +79,9 @@ article > p{
 }
 
 .grid > *{
-    min-width: 0px;
-}
+        max-width: 100%;
+    }   
 
-.trick{
-    width: 100%;
-    height: 100%;
-}
 .clip{
     width: auto;
     height: 300px;
@@ -145,18 +90,8 @@ article > p{
     border-radius: 5px;
 }
 
-
-
-/*styling the footer */ 
-.foot{
-    display: flex;
-    justify-content: space-between;
-    margin: 0px 20px;
-    height: 200px;
-}
-
-.foot > h3{
-    font-size: .8rem;
-    align-self: center;
-    font-weight: 600;
+@media screen and (max-width: 600px){
+    .grid{
+        display: block;
+    }
 }
