@@ -1,0 +1,157 @@
+/* ------------STYLING MAIN------------- */ 
+
+/*wrapper container and headers */ 
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 10px;
+    margin: 10px;
+    padding: 15px;
+}
+
+/*this will only apply to language contianer here */ 
+.experience > h1{
+    background-color: #3A3B3C;
+    border: 1px solid #3A3B3C; 
+    border-radius: 20px; 
+    padding: 10px 20px;
+    flex-basis: 100%;
+    text-align: center;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+}
+
+.experience:hover > h1{ 
+    background-color: #d2042d;
+}
+
+.experience > h2 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    border: 1px solid #3A3B3C; 
+    border-radius: 20px; 
+    max-width: 40%;
+    margin: 10px auto;
+}
+
+.experience:hover > h2{ 
+    background-color: black;
+    color: white;
+}
+
+.container > aside{ 
+    align-self: center;
+}
+
+.container > article{ 
+    
+    padding: 10px 40px;
+    margin: 10px;
+
+    /*flex properties */ 
+    flex: 1;
+    align-self: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.tech-used-table{
+    margin: 2% 20%;
+}
+
+.tech-used-table img {
+    width: 30px;
+    height: 30px;
+}
+
+.proj-link{
+    color: black;
+    text-decoration: none;
+}
+
+.proj-link:link{
+    color: black;
+}
+
+.proj-link:hover{
+    text-decoration: underline;
+    text-decoration-color: #d2042d;
+}
+
+#shoe-store{
+    width: 500px;
+    height: 250px;
+}
+
+#maze{
+    width: 500px;
+    height: 250px;
+}
+
+
+/* ---------------------OLD--------------------- */
+
+/*space and padding within the boxes of the active container */ 
+/* .active .box{
+    margin: 10px;
+    padding: 15px;
+}
+
+.box{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+ .box article{ 
+    align-self: center;
+    flex: 1;
+}
+
+article > p{ 
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: black;
+    font-weight: 300;
+    text-indent: 50px;
+} */
+
+/* #spanish{
+    height: 300px;
+    width: 300px;
+}
+
+#swim{
+    width: 200px;
+    height: 142px;
+}
+
+#skate{
+    width: 200px;
+    height: 250px;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-flow: row;
+    column-gap: 5px;
+    margin: 0px 10px;
+}
+
+.grid > *{
+        max-width: 100%;
+    }   
+
+.clip{
+    width: auto;
+    height: 300px;
+    background-color: lightblue;
+    border: 1px solid darkblue;
+    border-radius: 5px;
+} */
+
+@media screen and (max-width: 600px){
+    .grid{
+        display: block;
+    }
+}

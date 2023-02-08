@@ -4,47 +4,97 @@
     /*flex styles*/ 
    display: flex; 
    flex-wrap: wrap;
+   width: 85%;
+   margin: 0 auto;
 }
 
-.container > h1{
-    background-color: #7FB77E;
-    border: 1px solid #7FB77E; 
+.experience > h1{
+    background-color: #3A3B3C;
+    border: 1px solid #3A3B3C; 
     border-radius: 20px; 
     padding: 10px 20px;
     flex-basis: 100%;
     text-align: center;
-    font-family: 'Courier New', Courier, monospace;
-    color: black;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
 }
 
-.container:hover > h1{ 
-    background-color: #FFC090;
+.experience:hover > h1{ 
+    background-color: #d2042d;
+}
+
+.experience > h2 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    border: 1px solid #3A3B3C; 
+    border-radius: 20px; 
+    max-width: 40%;
+    margin: 10px auto;
+}
+
+.experience:hover > h2{ 
+    background-color: black;
+    color: white;
+}
+
+.container > aside{ 
+    align-self: center;
 }
 
 .container > article{ 
     
-    padding: 10px;
+    padding: 10px 40px;
     margin: 10px;
 
     /*flex properties */ 
     flex: 1;
     align-self: center;
+    width: 80%;
+    margin: 0 auto;
+
+
 }
 
 article > p{ 
-    font-family: 'Courier New', Courier, monospace;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: black;
     font-weight: 300;
-    text-indent: 50px;
 }
 
-#royce, #barcelona{
-    width: 400px;
-    height: 266px;
+.maesa-responsibilities {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 300;
+    width: 50%;
+}
+
+.maesa-responsibilities > li {
+    margin: 1% auto;
+    width: 50%;
+}
+
+
+
+.technology-table{
+    margin: 2% 20%;
+}
+
+.technology-table img {
+    width: 30px;
+    height: 30px;
+}
+
+#royce{
+    width: 300px;
+    height: 200px;
+}
+
+#experis{
+    width: 200px;
+    height: 200px;
 }
 
 #maesa{
-    width: 400px;
-    height: 344px;
+    width: 200px;
+    height: 200px;
 }
 
