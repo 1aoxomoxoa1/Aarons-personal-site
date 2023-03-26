@@ -78,6 +78,11 @@
     text-decoration-color: #d2042d;
 }
 
+#codeblock{
+    width: 500px;
+    height: 250px;
+}
+
 #shoe-store{
     width: 500px;
     height: 250px;
